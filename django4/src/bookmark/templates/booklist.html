@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+{# list : Bookmark 객체 리스트#}
+{% for obj in list%}
+    <a href="{{obj.url}}">{{obj.name}}</a>
+    <p>obj.id : {{obj.id}}</p>
+    <br>
+{% endfor %}
+<!--href = "/" = "127.0.0.1:8000/"-->
+<a href = "/"> 메인페이지로 가기 </a>
+{% endblock %}

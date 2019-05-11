@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+{#form:html <input>태그가 있는 테이블형식 문자열#}
+<h3>답변항목 추가</h3>
+
+<form action="/vote/cr/" method="POST">
+	{% csrf_token %}
+	<table border=1>
+	{{ form }}
+	</table>
+	<input type='submit' value="추가"> 
+</form>
+{%endblock%}

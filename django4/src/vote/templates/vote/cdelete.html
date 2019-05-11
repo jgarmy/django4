@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+{#title : 삭제된 객체의 항목이름, type:1=Question,2=Choice 삭제됨#}
+<p>
+{% if type == 1%}
+{% else %}
+{% endif %}
+{{title}}이 성공적으로 삭제되었습니다.
+</p>
+<a href="/vote/">메인으로 돌아가기</a>
+
+{% endblock %}
